@@ -1,16 +1,17 @@
-# EFI Hackintosh Monterey 12.5 - Opencore 7.8 for Dell Optiplex 7080 Tower
+# EFI Hackintosh Sonoma 14.4 - Opencore 1.0 for Dell Optiplex 7080 MT
 
 
 
-![dell](https://i.imgur.com/iTg8doQ.png)
+![dell](./img/1.png)
 
 ![neofetch](https://i.imgur.com/kTURdCz.png)
 
 ## Introdution
 
 You need [**generate a new SMIBIOS**](https://github.com/corpnewt/GenSMBIOS) before login to your iCloud account.
-
-## 
+> easy way with [OCAT](https://github.com/ic005k/OCAuxiliaryTools/blob/master/READMe.md)
+![ocat-smBios](./img/2.png)
+##
 
 ## Hardware Specs
 
@@ -18,11 +19,14 @@ You need [**generate a new SMIBIOS**](https://github.com/corpnewt/GenSMBIOS) bef
 - **CPU**:  [Intel® Core™ i5-10500](https://ark.intel.com/content/www/us/en/ark/products/199316/intel-core-i710700-processor-16m-cache-up-to-4-80-ghz.html)
 - **iGPU**: Intel® UHD Graphics 630
 - **RAM**: 64GB DDR4 2933 Daul Channel
-- **HDD**: T-FORCE Z440 NVMe Gen4 SSD 1T
+- **SSD1**: T-FORCE Z440 NVMe Gen4 SSD 1T
+- **SSD2**: Dell NVMe SSSTC 256GB
+- **HDD1**: WDC 2T
+- **HDD2**: ST1000DM010 1T
 - **LAN**: Intel I219LM11
 - **Wi-Fi & Bluetooth**: intel wifi 6 ax201
 
-## 
+##
 
 ## Working
 
@@ -32,17 +36,15 @@ You need [**generate a new SMIBIOS**](https://github.com/corpnewt/GenSMBIOS) bef
 - LAN & Wireless & Network
 - Sleep & Wakeup
 - Airdrop / Airplay /  Handoff
+- Dual boot with window on other driver
 
-## 
+##
 
 ## Not working
 
-- Sidecar (needs T2 chip)
-- DRM Content in Safari (needs T2 chip)
-- Internal Sound
-- Shutdown
+- Shutdown (after shutdown, case still runnng)
 
-## 
+##
 
 ## UEFI Settings
 
@@ -55,7 +57,7 @@ You need [**generate a new SMIBIOS**](https://github.com/corpnewt/GenSMBIOS) bef
 - Intel® Software Guard Extensions™ → Intel® SGX™ Enable: ***uncheck***
 - Virtualization Support → VT for Direct I/O: ***check***
 
-## 
+##
 
 ## Modify DVMT & CFG_lock settings
 
